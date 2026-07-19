@@ -51,9 +51,6 @@ class MeshRouter(
         // Subscribe to peer discovery events to update routing table
         scope.launch {
             eventBus.subscribe<PeerDiscoveredEvent>().collect { event ->
-                val (host, port) = event.address.split(":").let {
-                    it[0] to (it.getOrNull(1)?.toIntOrNull() ?: 7480)
-                }
                 addRoute(Route(event.peerId, event.address, 1, "TCP"))
             }
         }
