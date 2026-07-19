@@ -1,0 +1,53 @@
+# Build output
+build/
+*/build/
+out/
+
+# Gradle
+.gradle/
+gradle-app.setting
+!gradle-wrapper.jar
+!gradle-wrapper.properties
+
+# IntelliJ IDEA
+.idea/
+*.iws
+*.iml
+*.ipr
+.idea_modules/
+
+# VS Code
+.vscode/
+
+# Node / npm (for meshcore-web frontend if added)
+node_modules/
+npm-debug.log*
+
+# OS generated
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V2
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Kotlin
+*.class
+
+# Test data directories
+/tmp/
+*.tmp
+
+# Local config overrides
+meshcore.properties.local
+
+# Log files
+*.log
+logs/
+
+# SQLite database files created during development
+*.db
+*.sqlite
+*.db-shm
+*.db-wal
